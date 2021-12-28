@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">ExpenseTracker</h1>
+    <div class="container">
+        <div class="display">
+            <div class="top">
+                <div class="balancesheet" style="background-color: rgb(113, 152, 223);">
+                    <h1>Balance</h1>
+                    <h2 id="balance_amount" class="amt1"></h2>
+                </div>
+                <div class="incomesheet" style="background-color: rgb(113, 236, 185);">
+                    <h1 style="text-align: left;">Income</h1>
+                    <h2 id="income_amount" class="addmoney"></h2>
+                </div>
+        
+                <div class="expensessheet" style="background-color: rgb(233, 123, 104);">
+                    <h1>Expenses</h1>
+                    <h2 id="expense_amount" class="submoney"></h2>
+                </div>
+            </div>
+            <div>
+                <center>
+                    <p id="datetime" style="color: rgb(4, 61, 26);font-weight: 700;"></p>
+                </center>
+            </div>
+            
+            <div class="tran">      
+                <form id="form">
+                    <div class="form_control">
+                        <label for="text" ><b>Text</b></label>
+                        <input type="text" id="text" placeholder="Enter incomes/expenses">
+                    </div>
+                    <div class="form_control">
+                        <label for="amount" ><b>Amount</b></label>
+                        <input type="number" name="number" id="amount" placeholder="Enter amount">
+                    </div>
+                    <div class="button">
+                        <button class="sbtn" type="button" id="incomes_btn"  onclick="income()">Incomes</button>
+                        <button class="dbtn" type="button" id="expenses_btn" onclick="expense()">Expenses</button>
+                    </div>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
